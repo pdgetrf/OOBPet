@@ -24,17 +24,17 @@ public class Cat extends Animal {
 
     // cat specific method
     void purr() {
-        System.out.println("Cat " + getName() + ": Purrrrrrr...");
+        System.out.println("Cat " + name + ": Purrrrrrr...");
     }
 
     @Override
     public void speak() {
-        System.out.println("Cat " + getName() + " says 'Meow!'");
+        System.out.println("Cat " + name + " says 'Meow!'");
     }
 
     @Override
     public void play() {
-        System.out.println("Cat " + getName() + " jumps on a kitchen table");
+        System.out.println("Cat " + name + " jumps on a kitchen table");
     }
 
     // an overload of function play with different argument
@@ -44,7 +44,7 @@ public class Cat extends Animal {
         if (toy == null || toy.isBlank()) {
             return;
         }
-        System.out.println("Cat " + getName() + " is playing with " + toy);
+        System.out.println("Cat " + name + " is playing with " + toy);
     }
 
 }

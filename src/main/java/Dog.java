@@ -20,12 +20,12 @@ public class Dog extends Animal {
 
     @Override
     public void speak() {
-        System.out.println("Dog " + getName() + " says 'Woof'");
+        System.out.println("Dog " + name + " says 'Woof'");
     }
 
     @Override
     public void play() {
-        System.out.println(owner + "'s dog " + getName() + " is chasing toy in living room");
+        System.out.println(owner + "'s dog " + name + " is chasing toy in living room");
     }
 
     @Override
@@ -34,7 +34,7 @@ public class Dog extends Animal {
             return;
         }
 
-        System.out.println(owner + "'s dog " + getName() + " is playing with a " + toy);
+        System.out.println(owner + "'s dog " + name + " is playing with a " + toy);
     }
 }
 

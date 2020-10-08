@@ -52,4 +52,49 @@ public class PetsOOPTest {
             animals[i].play("chewing bone");
         }
     }
+
+    @Test
+    public void testRobotDog() {
+        RobotAnimal robotDog = new RobotDog(
+                "x1",
+                2,
+                "bm",
+                3,
+                350
+        );
+
+        System.out.println(robotDog);
+        robotDog.play();
+
+    }
+
+    @Test
+    public void everyonePlay() {
+        CommonActions[] everyone = new CommonActions[3];
+
+        everyone[0] = new Cat(
+                "coco",
+                "male",
+                5
+        );
+
+        everyone[1] = new Dog(
+                "Sam",
+                "male",
+                3,
+                "Stella"
+        );
+
+        everyone[2] = new RobotDog(
+                "x1",
+                2,
+                "bm",
+                3,
+                350
+        );
+
+        for (CommonActions commonActions : everyone) {
+            commonActions.play();
+        }
+    }
 }
